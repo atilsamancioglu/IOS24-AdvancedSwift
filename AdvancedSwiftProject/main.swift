@@ -70,17 +70,17 @@ structJames.happyBirthday()
 // TUPLE
 
 let myTuple = (1,3)
-print(myTuple.0)
+//print(myTuple.0)
 
 var myTuple2 = (1,3,5)
 myTuple2.2 = 10
-print(myTuple2.2)
+//print(myTuple2.2)
 
 let myTuple3 = ("Atil", 100)
 
 let myTuple4 = (10,[10,20,30])
 
-print(myTuple4.1[1])
+//print(myTuple4.1[1])
 
 let myString : String?
 
@@ -89,12 +89,12 @@ let predefinedTuple : (String, String)
 predefinedTuple.0 = "Atil"
 predefinedTuple.1 = "Sam"
 
-print(predefinedTuple)
+//print(predefinedTuple)
 
 
 let newTuple = (name:"James", metallica: true)
-print(newTuple.metallica)
-print(newTuple.name)
+//print(newTuple.metallica)
+//print(newTuple.name)
 
 
 // Guard Let vs If Let
@@ -119,5 +119,44 @@ func convertToIntegerIf (stringInput : String) -> Int {
     }
 }
 
-print(convertToIntegerIf(stringInput: myNumber))
-print(convertToIntegerGuard(stringInput: myNumber))
+//print(convertToIntegerIf(stringInput: myNumber))
+//print(convertToIntegerGuard(stringInput: myNumber))
+
+//Switch
+
+let myNum = 11
+
+//remainder
+
+let myRemainder = myNum % 4
+
+//print(myRemainder)
+
+/*
+if myRemainder == 1 {
+    print("it's 1")
+} else if myRemainder == 2 {
+    print("it's 2")
+} else if myRemainder == 3 {
+    print("it's 3")
+}
+ */
+
+switch myRemainder {
+case 1...3:
+    print("it's 1 - 3")
+default:
+    print("none of the above")
+}
+
+//Breakpoint
+
+var x = 5
+
+print (x)
+
+x += 1
+
+print(x)
+
+
